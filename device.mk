@@ -138,6 +138,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libstdc++.vendor
 
+PRODUCT_PACKAGES += \
+    GrapheneCamera
+
 # Consumer IR
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
