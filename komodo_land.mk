@@ -9,20 +9,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
-# Inherit some common Nusantara stuff.
+# Inherit some common Komodo stuff.
+KOMODO_OFFICIAL := false
+KOMODO_GAPPS_TYPE := nogapps
+KOMODO_VARIANT := RELEASE
 TARGET_BOOT_ANIMATION_RES := 720
-NAD_BUILD_TYPE := OFFICIAL
-USE_PIXEL_CHARGING := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+$(call inherit-product, vendor/komodo/config/common.mk)
 
 # Inherit from land device
 $(call inherit-product, device/xiaomi/land/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := land
-PRODUCT_NAME := nad_land
+PRODUCT_NAME := komodo_land
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 3S / 3X
