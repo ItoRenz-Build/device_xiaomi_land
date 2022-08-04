@@ -331,7 +331,10 @@ PRODUCT_PACKAGES += \
 
 # Perf
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.0.vendor
+    vendor.qti.hardware.perf@1.0.vendor \
+    vendor.qti.hardware.perf@2.0.vendor \
+    vendor.qti.hardware.perf@2.1.vendor \
+    vendor.qti.hardware.perf@2.2.vendor
 
 # Power
 PRODUCT_PACKAGES += \
